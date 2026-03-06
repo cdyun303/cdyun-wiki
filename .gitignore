@@ -1,0 +1,7 @@
+build
+vendor
+.env
+.idea
+.vscode
+.phpunit*
+composer.lock
