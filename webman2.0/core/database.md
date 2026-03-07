@@ -20,7 +20,7 @@ composer require -W webman/database illuminate/pagination illuminate/events symf
 
 ### 配置
 
-config/database.php，参考webman官方配置文件。
+配置文件路径：`config/database.php`，参考webman官方配置文件。
 
 ```php
 return [
@@ -92,7 +92,7 @@ composer require -W webman/think-orm
 
 ### 配置
 
-config/think-orm.php，根据实际情况修改配置文件。
+配置文件路径：`config/think-orm.php`，根据实际情况修改配置文件。
 
 ### 示例
 

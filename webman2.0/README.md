@@ -17,7 +17,7 @@ composer create-project cdyun/webman-framework webman
 ```bash
 cd webman
 
-composer install
+composer update
 ```
 
 3. **安装常用组件（可选）**
@@ -67,7 +67,7 @@ php start.php start
 php start.php start -d
 ```
 
-5. **访问项目**
+6. **访问项目**
 
 打开浏览器访问：`http://localhost:8787`
 

@@ -10,7 +10,7 @@ composer require -W webman/redis illuminate/events
 
 ## 配置
 
-config/redis.php
+配置文件路径：`config/redis.php`
 
 ```php
 return [

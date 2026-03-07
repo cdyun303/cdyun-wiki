@@ -12,7 +12,7 @@ composer require -W webman/cache
 
 ### 配置
 
-config/cache.php
+配置文件路径：`config/cache.php`
 
 ```php
 return [
@@ -66,7 +66,7 @@ composer require -W webman/think-cache
 
 ### 配置
 
-config/think-cache.php
+配置文件路径：`config/think-cache.php`
 
 ### 示例
 

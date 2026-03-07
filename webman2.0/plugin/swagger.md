@@ -24,7 +24,7 @@ http://域名/app/swagger
 
 ## 配置文件
 
-在config/app.php中添加swagger配置
+配置文件路径：`config/app.php`，在配置文件中添加swagger配置
 ```php
 return [
     ...,
