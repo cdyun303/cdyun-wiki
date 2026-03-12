@@ -1,4 +1,4 @@
-# 请求响应Response扩展
+# Thinkphp 请求响应Response扩展
 
 > 提供响应处理功能
 

@@ -9,4 +9,5 @@
   - [Swagger扩展](/thinkphp8.0/plugin/swagger.md)
   - [Upload扩展](/thinkphp8.0/plugin/upload.md)
   - [Cache扩展](/thinkphp8.0/plugin/cache.md)
+  - [限流器扩展](/thinkphp8.0/plugin/limiter.md)
 

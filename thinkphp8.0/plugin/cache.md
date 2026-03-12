@@ -1,4 +1,4 @@
-# 缓存Cache扩展
+# Thinkphp 缓存Cache扩展
 
 > 基于TP Cache 的封装，本缓存只支持redis和file驱动。
 
