@@ -18,19 +18,19 @@ use Cdyun\WebmanResponse\Response;
 ResponseEnforcer::getConfig($name = null, $default = null);
 
 //成功
-ResponseEnforcer::success($msg = '操作成功', $data = null, $code = null, $is_encrypt = true);
+ResponseEnforcer::success($msg = '操作成功', $data = null);
 
 //失败
-ResponseEnforcer::error($msg = '操作失败', $data = null, $code = null, $is_encrypt = false);
+ResponseEnforcer::error($msg = '操作失败', $data = null);
 
 //异常
 ResponseEnforcer::abort($msg = '服务器内部错误', $code = null);
 
 //分页
-ResponseEnforcer::paginate( $data = [], $totalCount = 0, $msg = '加载完成', $code = null, $is_encrypt = true);
+ResponseEnforcer::paginate( $data = [], $totalCount = 0, $msg = '加载完成');
 
 //结果
-ResponseEnforcer::result($result, $is_encrypt = true);
+ResponseEnforcer::result($result, $is_encrypt = false);
 ```
 
 ### 加密/解密

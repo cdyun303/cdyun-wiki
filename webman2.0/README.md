@@ -23,6 +23,9 @@ composer update
 3. **安装常用组件（可选）**
 
 ```bash
+# Response插件（已安装）
+composer require cdyun/webman-response
+
 # PHP8.1+ 通用工具包
 composer require cdyun/php-tool
 
@@ -40,9 +43,6 @@ composer require topthink/think-validate
 
 # JWT插件
 composer require cdyun/webman-jwt
-
-# Response插件
-composer require cdyun/webman-response
 
 # Swagger应用插件
 composer require cdyun/webman-swagger
@@ -86,12 +86,14 @@ webman/                                   部署目录
 │   │   ├── controller                    控制器
 │   │   ├── model                         模型
 │   │   ├── view                          视图
+│   │   ├── event                         事件
 │   │   └── ...                           其他
 │   │
 │   ├── v2                                V2应用
 │   │   ├── controller                    控制器
 │   │   ├── model                         模型
 │   │   ├── view                          视图
+│   │   ├── event                         事件
 │   │   └── ...                           其他
 │   │
 │   └── functions.php                     业务自定义函数写到这个文件里
@@ -123,13 +125,11 @@ webman/                                   部署目录
 ├── runtime                               应用的运行时目录，需要可写权限
 ├── vendor                                composer安装的第三方类库目录
 ├── support                               全局配置类库目录
-│   ├── event                             事件类目录
-│   │   └── AdminEvent.php                Admin应用事件
 │   ├── exception.php                     异常类目录  
-│   │   ├── AdminException.php            Admin应用异常
 │   │   ├── AppException.php              全局应用异常
 │   │   └── AppHandler.php                应用异常处理类    
 │   ├── middleware                        中间件类目录
+│   │   ├── BrowserCheckMiddleware.php    浏览器/操作系统中间件
 │   │   └── CrossDomainMiddleware.php     跨域中间件
 │   ├── Request.php                       请求类
 │   ├── Response.php                      响应类
