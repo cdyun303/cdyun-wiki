@@ -12,4 +12,5 @@
 - [加解密处理](/tool_php/encrypt.md)
 - [代码生成处理](/tool_php/generate.md)
 - [HTTP请求处理](/tool_php/curl.md)
+- [目录文件处理](/tool_php/dir.md)
 - [全局辅助方法](/tool_php/helper.md)
