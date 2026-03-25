@@ -127,6 +127,19 @@ $path = Arr::path($data, 'id', 'parent_id', 'name', 'path', '/');
 // ]
 ```
 
+#### getParentIds() - 获取叶子节点的所有父节点ID
+```php
+ $arr = [
+     ['id' => 1, 'name' => '部门1', 'parent_id' => 0, 'path' => '部门1'],
+     ['id' => 2, 'name' => '部门2', 'parent_id' => 1, 'path' => '部门1/部门2'],
+     ['id' => 3, 'name' => '部门3', 'parent_id' => 1, 'path' => '部门1/部门3'],
+     ['id' => 4, 'name' => '部门4', 'parent_id' => 2, 'path' => '部门1/部门2/部门4']
+ ];
+$path = Arr::path($arr, 4, 'parent_id');
+// 输出的是字符串类型的id:
+// ['1','2']
+```
+
 ### 数组访问和操作
 
 #### deepMerge() - 数组深度合并
