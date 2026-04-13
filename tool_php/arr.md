@@ -130,14 +130,34 @@ $path = Arr::path($data, 'id', 'parent_id', 'name', 'path', '/');
 #### getParentIds() - 获取叶子节点的所有父节点ID
 ```php
  $arr = [
-     ['id' => 1, 'name' => '部门1', 'parent_id' => 0, 'path' => '部门1'],
-     ['id' => 2, 'name' => '部门2', 'parent_id' => 1, 'path' => '部门1/部门2'],
-     ['id' => 3, 'name' => '部门3', 'parent_id' => 1, 'path' => '部门1/部门3'],
-     ['id' => 4, 'name' => '部门4', 'parent_id' => 2, 'path' => '部门1/部门2/部门4']
+     ['id' => 1, 'name' => '部门1', 'parent_id' => 0],
+     ['id' => 2, 'name' => '部门2', 'parent_id' => 1],
+     ['id' => 3, 'name' => '部门3', 'parent_id' => 1],
+     ['id' => 4, 'name' => '部门4', 'parent_id' => 2]
  ];
-$path = Arr::path($arr, 4, 'parent_id');
-// 输出的是字符串类型的id:
+$path = Arr::getParentIds($arr, 4, 'parent_id');
+// 输出:
 // ['1','2']
+```
+
+#### getChildIds() - 获取所有子节点的ID
+```php
+ $arr = [
+     ['id' => 1, 'name' => '部门1', 'parent_id' => 0],
+     ['id' => 2, 'name' => '部门2', 'parent_id' => 1],
+     ['id' => 3, 'name' => '部门3', 'parent_id' => 1],
+     ['id' => 4, 'name' => '部门4', 'parent_id' => 2]
+ ];
+ // 不含自身
+$path = Arr::getChildIds($arr, 1, 'parent_id',false);
+// 输出:
+// ['2','3','4']
+
+
+ // 含自身
+$path = Arr::getChildIds($arr, 1, 'parent_id',true);
+// 输出:
+// ['1','2','3','4']
 ```
 
 ### 数组访问和操作
