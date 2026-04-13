@@ -46,6 +46,9 @@ composer require cdyun/webman-jwt
 
 # Swagger应用插件
 composer require cdyun/webman-swagger
+
+# 邮件
+composer require symfony/mailer
 ```
 
 4. **配置环境**
